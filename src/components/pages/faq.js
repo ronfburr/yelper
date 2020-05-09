@@ -17,36 +17,28 @@ function Faq() {
             </thead>
             <tbody>
               <tr>
-                <td>Input Value</td>
-                <td>Given value in the original (input) units.</td>
+                <td>Term</td>
+                <td>Yelp category (e.g., Ice Cream).</td>
               </tr>
               <tr>
-                <td>Input Units</td>
-                <td>
-                  Units of the input original (input) value provided.<br />
-                  Temperature:  k=Kelvin, r=Rankine, c=Celsis, f=Farenhieght<br />
-                  Volume: l=liters, g=gallons, t=tablespoons, p=cups, i=cubic-inches, e=cubic-feet
-                </td>
+                <td>Locatoin</td>
+                <td>Lowercase city, state.</td>
               </tr>
               <tr>
-                <td>Ouput Units</td>
-                <td>Target or output units to which input is converted.</td>
+                <td>Numbewr</td>
+                <td>Number of returned results.</td>
               </tr>
               <tr>
-                <td>Ouput Value</td>
-                <td>Target or output converted value (actual answer).</td>
+                <td>Method</td>
+                <td>Search/sorting method (e.g., rating).</td>
               </tr>
               <tr>
-                <td>Student</td>
-                <td>Student answer for the ouput (conveted) value.</td>
+                <td>Results</td>
+                <td>Ranked search results.</td>
               </tr>
               <tr>
-                <td>Error</td>
-                <td>Absolute value of difference between actual ouput and student value.</td>
-              </tr>
-              <tr>
-                <td>Result</td>
-                <td>Correct, incorrect, or invalid (if converting between temperature and volume).</td>
+                <td>Review</td>
+                <td>Enter the alias (ID) for a result to set a review.</td>
               </tr>
             </tbody>
           </table>

@@ -9,6 +9,7 @@ import Nav from './template/nav';
 import Footer from './template/footer';
 
 import Results from './pages/results';
+import Review from './pages/review';
 import Faq from './pages/faq';
 
 import {
@@ -18,8 +19,6 @@ import {
   updateMethod,
   fetchData
 } from '../store/actions/updateSearch';
-
-import { updateLog } from '../store/actions/updateLog';
 
 const { Component } = React;
 
@@ -55,10 +54,6 @@ class App extends Component {
   handleMethod = (e) => {
     const { updateMethod } = this.props;
     updateMethod(e.target.value)
-  }
-  handleUpdateLog = () => {
-    const { updateLog } = this.props;
-    updateLog(this.props.search)
   }
   render() {
     return (
@@ -114,6 +109,7 @@ class App extends Component {
               <br />
               <Switch>
                 <Route exact path="/"><Results results={ this.props.search }/></Route>
+                <Route path="/review"><Review /></Route>
                 <Route path="/"><Faq /></Route>
               </Switch>
               <br />
@@ -129,7 +125,6 @@ class App extends Component {
 const MapStateToProps = (state) => {
   return {
     search: state.search,
-    log: state.log
   };
 };
 
@@ -138,8 +133,7 @@ const MapDispatchToProps = dispatch => bindActionCreators({
   updateLocation,
   updateNumber,
   updateMethod,
-  fetchData,
-  updateLog
+  fetchData
 }, dispatch)
 
 export default connect(MapStateToProps, MapDispatchToProps)(App);

@@ -2,11 +2,11 @@ import {createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import searchReducer from './reducers/searchReducer';
-import logReducer from './reducers/logReducer';
+import reviewReducer from './reducers/reviewReducer';
 
 const reducer = combineReducers({
   search: searchReducer,
-  log: logReducer
+  review: reviewReducer
 });
 
 const initialState = {
@@ -18,16 +18,10 @@ const initialState = {
     result: '',
     results: []
   },
-  log: [
-    {
-      term: "Ice Cream",
-      location: 'atlanta, ga',
-      number: 5,
-      method: 'rating',
-      result: '',
-      results: []
-    }
-  ]
+  review: {
+    term: 'jenis-splendid-ice-creams-atlanta',
+    reviews: []
+  }
 };
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

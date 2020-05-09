@@ -5,3 +5,13 @@
     }
   }
 }
+
+.table-reviews {
+  td:first-child {
+    white-space: nowrap;
+  }
+  td:nth-child(2) {
+    white-space: nowrap;
+    text-align: center;    
+  }
+}

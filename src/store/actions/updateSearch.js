@@ -46,8 +46,6 @@ export const updateMethod = (input) => (
 )
 
 export function fetchData(term, location, limit, method) {
-  //const term = searchParams
-  //console.log(term)
   const url = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search'
   const key = 'mqjIyyel9uxk9y9Lzfpb3mtk9atPVJe0VO5TiaxSn_3k54euZfr4MIQM7b0dtE9x9ytbkQnioDzx8hoLtYH7rNg71F8spf-zb0jRkX-Ds--d7vWFAg_LYk_M2RCrXnYx'
   const params = {
@@ -67,13 +65,7 @@ export function fetchData(term, location, limit, method) {
     .then((response) => {
       dispatch(fetchDataSuccess(response.data.businesses))
     })
-    .then((response) => response.json())
-    .then((items) => {
-      console.log('test4')
-      dispatch(fetchDataSuccess(items))
-    })
     .catch(() => dispatch(hasErrored(true)));
-    dispatch(isLoading(true));
   };
 }
 
