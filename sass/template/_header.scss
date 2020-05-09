@@ -1,0 +1,18 @@
+#header, .header {
+  #header-inner, .header-inner {
+    #header-title, .header-title {
+      margin: 0;
+      padding: 1em 0;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      background: #333;
+      color: white;
+      a {
+        color: white;
+        &:hover {
+        }
+      }
+    }
+  }
+}

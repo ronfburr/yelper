@@ -1,0 +1,12 @@
+button {
+  background: #666;
+  color: white;
+  border-radius: 1em;
+  font-weight: bold;
+  border: none;
+  padding: 0.5em 2em;
+  display: inline-block;
+  &:hover {
+    background: #999;
+  }
+}

@@ -1,0 +1,21 @@
+#nav, .nav {
+  #nav-inner, .nav-inner {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #666;
+    color: white;
+    a {
+      display: inline-block;
+      margin: 0;
+      padding: 0.5em 1em;
+      color: white;
+      &:hover {
+        background: #ccc;
+        color: black;
+      }
+    }
+  }
+}

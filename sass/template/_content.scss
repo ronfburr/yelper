@@ -1,0 +1,12 @@
+#content, .content {
+  background: white;
+  #content-inner, .content-inner {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    .content-section {
+      padding: 1em;
+      text-align: center;
+    }
+  }
+}

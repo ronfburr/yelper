@@ -1,0 +1,18 @@
+#footer, .footer {
+  #footer-inner, .footer-inner {
+    #footer-text, .footer-text {
+      margin: 0;
+      padding: 1em 0;
+      text-align: center;
+      font-size: 1em;
+      font-weight: bold;
+      background: #333;
+      color: white;
+      a {
+        color: white;
+        &:hover {
+        }
+      }
+    }
+  }
+}
